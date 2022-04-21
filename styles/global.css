@@ -1,0 +1,398 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* roboto font */
+/* roboto-300 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url('/fonts/roboto-v15-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/roboto-v15-latin-300.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url('/fonts/roboto-v15-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/roboto-v15-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-500 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url('/fonts/roboto-v15-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/roboto-v15-latin-500.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url('/fonts/roboto-v15-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/roboto-v15-latin-700.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+
+@font-face {
+  font-family: 'Futura';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Futura Bold'), local('Futura-Bold'), url('/fonts/Futura.woff') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/Futura.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+
+
+html {
+  min-height: 100% !important;
+  position: relative !important;
+}
+body { 
+	overflow-X:hidden !important;
+  font-family: "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif !important; 
+  font-size: 16px !important;
+  background-color:#141b31 !important;
+  color: #fff !important;
+}
+
+.detail-item {
+  @apply flex justify-between border-b border-b-[#fff] py-1 text-lg;
+}
+
+.detail-item-header {
+  @apply text-[#25b8d5];
+}
+
+.ant-input-group{
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+.ant-input-group-addon {
+  width: 80px !important;
+  font-size: 16px !important;
+  padding: 10px 12px !important;
+}
+
+.ant-input{
+  background-color: #293044 !important;
+  color: #fff !important;
+  font-size: 16px !important;
+}
+
+.ant-select-selector {
+  height:100% !important;
+  padding: 10px 12px !important;
+  border: none !important;
+}
+
+.ant-select-arrow {
+  color: black !important;
+}
+
+.detail-link {
+  @apply text-[#9ECAD3] bg-[#293044] p-2 rounded-xl;
+}
+
+.ant-radio-button-wrapper {
+  background-color: #293044 !important;
+  color: #fff !important;
+}
+
+.ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled){
+  background-color: #25b8d5 !important;
+  border: none !important;
+}
+
+.ant-typography.coin-detail-para {
+  font-size: 16px;
+  color: #fff;
+}
+
+.ant-btn.ant-btn-sm.read-more{
+ @apply border border-[#fff] text-[#fff] bg-transparent rounded p-3 flex justify-center items-center;
+}
+
+.ant-card.ant-card-bordered.ant-card-hoverable {
+  @apply bg-[#293044] text-white border-none rounded-lg;
+}
+
+.ant-table {
+  background-color: transparent !important;
+  color: #fff !important;
+  font-size: 16px !important;
+}
+.ant-table-cell.ant-table-cell-row-hover{
+  background-color: #293044 !important;
+  cursor: pointer !important;
+}
+.ant-table-cell.ant-table-column-sort{
+  background-color: #293044 !important;
+  cursor: pointer !important;
+}
+.ant-table-thead > tr > th {
+  background-color: transparent !important;
+  color: #9ECAD3 !important;
+  border-bottom: 2px solid #262a2d !important;
+}
+
+.ant-table-tbody > tr > td {
+  border: none !important;
+}
+
+.ant-pagination-item {
+  border: none !important;
+  background-color: #293044 !important;
+}
+
+.ant-pagination-item a {
+  color: #9ECAD3 !important;
+  background-color: #293044 !important;
+  border: none !important;
+}
+
+.ant-pagination-item-active a{
+  border: 2px solid #1890ff !important;
+  color : #1890ff !important;
+}
+ .ant-pagination-item-link{
+  background-color: #293044 !important;
+  border: none !important;
+  color: #9ECAD3 !important;
+}
+
+.ant-pagination .ant-select-selector {
+  background-color: #293044 !important;
+  color : #9ECAD3 !important;
+  padding : 0 10px  !important;
+  height: auto !important;
+}
+
+.ant-pagination span.ant-select-arrow {
+  color : #9ECAD3 !important;
+}
+
+.ant-pagination-item-ellipsis {
+ color: #9ECAD3 !important;
+}
+
+.ant-btn.ant-btn-primary.filter-btn {
+  @apply rounded-2xl;
+  background-color: #3FB8D5 !important;
+  border: none !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+.filter-modal .ant-modal-content > *{
+  background-color: #293044 !important;
+  font-size: 16px !important;
+}
+
+.filter-modal .ant-modal-header {
+ border-bottom : 1px solid #9ECAD3 !important;
+}
+
+.filter-modal .ant-collapse-borderless{
+  background-color: #293044 !important;
+}
+
+.filter-modal .ant-collapse-header{
+  color: #fff !important;
+  font-size: 16px !important;
+}
+
+.filter-modal .ant-modal-title{
+  color : #fff !important;
+}
+
+.filter-modal .anticon {
+  color : #fff !important;
+}
+
+.filter-modal .ant-collapse-borderless > .ant-collapse-item {
+  border-bottom : 1px solid #9ECAD3 !important;
+}
+
+.filter-modal .ant-modal-footer {
+  border: none !important;
+}
+
+.filter-modal .apply-filter-btn {
+  background-color: #3FB8D5 !important;
+  border: none !important;
+}
+
+.filter-modal .apply-filter-btn:hover {
+  color: rgba(0,0,0,0.5) !important;
+}
+
+.filter-modal .ant-collapse-content{
+  font-size: 16px !important;
+  color: #fff !important;
+}
+
+.filter-modal .ant-collapse-content-box {
+  border-top: 1px solid #747474 !important;
+  padding-top: 2em !important;
+}
+
+.ant-layout-header {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  background-color: #141b31 !important;
+  height: 48px !important;
+  line-height: 24px !important;
+}
+
+.ant-menu.ant-menu-horizontal {
+  background-color: transparent !important;
+  color: #C6CCD2 !important;
+  border: none !important;
+  font-size: 16px !important;
+  margin-top: 1em !important;
+}
+
+.ant-menu.ant-menu-horizontal a {
+  color: #C6CCD2 !important;
+}
+
+.ant-menu-item a:hover, .ant-menu-item-selected {
+  color: #25b8d5 !important;
+}
+
+.ant-menu-item.ant-menu-item-active {
+  border-bottom: 2px solid #25b8d5 !important;
+}
+
+.ant-menu-overflow-item.ant-menu-item:hover{
+  border-bottom: 2px solid #25b8d5 !important;
+}
+
+.ant-menu.ant-menu-horizontal > .ant-menu-item::after {
+  border: none !important;
+}
+
+.footer-title {
+  @apply text-[#25b8d5] text-2xl mb-8;
+}
+
+.footer-list-item {
+  @apply flex items-center gap-1 hover:cursor-pointer my-2 text-[#adb5bd];
+}
+
+.footer-list-item span {
+  font-size: 16px;
+}
+
+.footer-icons .anticon{
+  font-size: 36px !important;
+  color : #3FB8D5 !important;
+  transition: transform 0.2s ease-in !important;
+}
+
+.footer-icons .anticon:hover{
+  cursor: pointer !important;
+  transform: scale(1.2) !important;
+}
+
+.more-card.ant-card.ant-card-bordered.ant-card-hoverable {
+  @apply min-h-full text-2xl flex items-center justify-center;
+}
+
+.more-card .ant-card-body {
+  @apply flex items-center gap-3 p-0;
+}
+
+.nav-logo {
+  box-sizing: border-box;
+  height: 45px;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.ant-drawer-content {
+  background-color: #141b31 !important;
+}
+
+.ant-drawer-header {
+  background-color: #141b31 !important;
+  border-bottom: 1px solid #495058 !important;
+}
+.ant-drawer-header-title {
+  min-width: 100% !important;
+  flex-direction: row-reverse !important;
+}
+.ant-drawer-header .ant-drawer-title, .ant-drawer-header .anticon-close{
+  color: #fff !important;
+  font-size: 16px !important;
+}
+
+.ant-drawer-body .ant-form-item-label label{
+  color: #fff !important;
+  font-size: 16px !important;
+}
+
+.ant-drawer-body .ant-form-item-control-input-content input{
+  background-color: #293044 !important;
+  border: none !important;
+}
+
+.ant-drawer-body .ant-form-item-control-input-content{
+  border: 1px solid #495058 !important;
+}
+
+.ant-drawer-body .ant-input-affix-wrapper.ant-input-password{
+  background-color: #293044 !important;
+  border: none !important;
+}
+
+.ant-drawer-body .ant-input-suffix .anticon.ant-input-password-icon{
+  color: #fff !important;
+}
+
+.ant-drawer-body .ant-checkbox-wrapper {
+  color: #fff !important;
+  font-size: 16px !important;
+}
+
+.ant-drawer-body .ant-checkbox-wrapper .ant-checkbox-inner{
+  background-color: #293044 !important;
+}
+
+.ant-drawer-body .ant-checkbox-checked .ant-checkbox-inner {
+  border-color: #3FB8D5 !important;
+}
+
+.ant-drawer-body a.forget-password {
+  color: #C6CCD2 !important;
+}
+
+.signup-btn {
+  margin-top: 2em !important;
+}
+
+.signup-btn .ant-form-item-control-input-content{
+  border: none !important;
+}
+
+.signup-btn button {
+  @apply bg-[#3FB8D5] border-none text-[#fff] w-full text-lg py-5 flex items-center justify-center;
+}
+
+.ant-drawer-body .signup-text {
+  @apply text-[#fff] text-center;
+}
+
+.ant-drawer-body .signup-text .signup-link{
+  @apply text-[#fff] text-base ml-3;
+}
